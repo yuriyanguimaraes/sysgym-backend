@@ -22,7 +22,9 @@ module.exports = (sequelize, DataTypes) => {
         },
         isDeleted: {
             type: DataTypes.TINYINT,
-            allowNull: true
+            max:1,
+            allowNull: false,
+            defaultValue:1,
         }
     },
         {
